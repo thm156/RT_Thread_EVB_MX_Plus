@@ -17,6 +17,11 @@
 
 #include "fal.h"
 
+
+#define APP_VERSION                      0L              /**< major version number */
+#define APP_SUBVERSION                   0L              /**< minor version number */
+#define APP_REVISION                     1L              /**< revise version number */
+
 int main(void)
 {
 //    int count = 1;
@@ -26,7 +31,11 @@ int main(void)
 //        LOG_D("Hello RT-Thread!");
 //        rt_thread_mdelay(1000);
 //    }
+
     fal_init();
+
+    LOG_I(" Application Software %d.%d.%d build %s\n",
+            APP_VERSION, APP_SUBVERSION, APP_REVISION, __DATE__);
 
     return RT_EOK;
 }

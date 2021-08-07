@@ -135,6 +135,7 @@
 
 /* Utilities */
 
+#define RT_USING_RYM
 /* end of Utilities */
 /* end of RT-Thread Components */
 
@@ -158,6 +159,7 @@
 
 /* end of IoT Cloud */
 #define PKG_USING_OTA_DOWNLOADER
+#define PKG_USING_YMODEM_OTA
 #define PKG_USING_OTA_DOWNLOADER_V100
 /* end of IoT - internet of things */
 
