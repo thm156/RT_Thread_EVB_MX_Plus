@@ -45,7 +45,6 @@ extern struct fal_flash_dev nor_flash0;
 /* partition table */
 #define FAL_PART_TABLE                                                               \
 {                                                                                    \
-    {FAL_PART_MAGIC_WORD,  "bootloader",             "onchip_flash",                                            0,  128 * 1024,        0}, \
     {FAL_PART_MAGIC_WORD,  "application",            "onchip_flash",                                   128 * 1024,  128 * 1024,        0}, \
     {FAL_PART_MAGIC_WORD,  "download",    FAL_USING_NOR_FLASH_DEV_NAME,                                         0,    2 * 1024 * 1024, 0}, \
     {FAL_PART_MAGIC_WORD,  "factory",     FAL_USING_NOR_FLASH_DEV_NAME,                          (2 * 1024) * 1024,   2 * 1024 * 1024, 0}, \
@@ -53,15 +52,6 @@ extern struct fal_flash_dev nor_flash0;
     {FAL_PART_MAGIC_WORD,  "filesystem",  FAL_USING_NOR_FLASH_DEV_NAME,    (2 * 1024 + 2 * 1024 + 2 * 1024) * 1024,   2 * 1024 * 1024, 0}, \
 }
 
-/*
-#define FAL_PART_TABLE                                                               \
-{                                                                                    \
-    {FAL_PART_MAGIC_WORD,        "bl",     "onchip_flash",         0,   128*1024, 0}, \
-    {FAL_PART_MAGIC_WORD,       "app",     "onchip_flash",   128*1024,  128*1024, 0}, \
-    {FAL_PART_MAGIC_WORD, "easyflash", FAL_USING_NOR_FLASH_DEV_NAME,         0, 1024*1024, 0}, \
-    {FAL_PART_MAGIC_WORD,  "download", FAL_USING_NOR_FLASH_DEV_NAME, 1024*1024, 1024*1024, 0}, \
-}
-*/
 #endif /* FAL_PART_HAS_TABLE_CFG */
 
 #endif /* _FAL_CFG_H_ */
