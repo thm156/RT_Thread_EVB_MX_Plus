@@ -24,14 +24,6 @@
 
 int main(void)
 {
-//    int count = 1;
-//
-//    while (count++)reb
-//    {
-//        LOG_D("Hello RT-Thread!");
-//        rt_thread_mdelay(1000);
-//    }
-
     fal_init( );
 
     LOG_I(" Application Software %d.%d.%d build %s\n",
