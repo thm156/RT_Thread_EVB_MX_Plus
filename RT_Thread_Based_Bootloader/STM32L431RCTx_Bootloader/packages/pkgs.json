@@ -5,11 +5,6 @@
   "name": "FAL"
  }, 
  {
-  "path": "/packages/system/syswatch", 
-  "ver": "v1.0.0", 
-  "name": "SYSWATCH"
- }, 
- {
   "path": "/packages/system/qboot", 
   "ver": "v1.05", 
   "name": "QBOOT"
