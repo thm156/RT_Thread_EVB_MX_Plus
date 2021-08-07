@@ -24,7 +24,7 @@
 
 int main(void)
 {
-    fal_init( );
+    fal_init( ); /*Tang Huimin add comments  for tesing pull request*/
 
     LOG_I(" Application Software %d.%d.%d build %s\n",
             APP_VERSION, APP_SUBVERSION, APP_REVISION, __DATE__);
