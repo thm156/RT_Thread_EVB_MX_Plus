@@ -16,7 +16,7 @@
 
 #ifdef RT_USING_QSPI
 
-#define DRV_DEBUG
+//#define DRV_DEBUG
 #define LOG_TAG              "drv.qspi"
 #include <drv_log.h>
 
