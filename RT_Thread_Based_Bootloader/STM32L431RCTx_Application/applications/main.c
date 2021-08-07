@@ -20,7 +20,7 @@
 
 #define APP_VERSION                      1L              /**< major version number */
 #define APP_SUBVERSION                   0L              /**< minor version number */
-#define APP_REVISION                     2L              /**< revise version number */
+#define APP_REVISION                     3L              /**< revise version number */
 
 int main(void)
 {
